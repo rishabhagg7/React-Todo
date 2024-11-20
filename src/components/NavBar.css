@@ -1,0 +1,23 @@
+.nav-container {
+    padding: 10px;
+    background-color: #39368D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.nav-container h1 {
+    cursor: pointer;
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-container ul li {
+    list-style-type: none;
+    cursor: pointer;
+}

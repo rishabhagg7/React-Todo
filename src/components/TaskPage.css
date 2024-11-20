@@ -1,0 +1,156 @@
+.task-page-container{
+    background-color: #EFECFE;
+    margin: 15px;
+    border-radius: 20px;
+    width: 750px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 50vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-page-container h1{
+    text-align: center;
+    font-size: 30px;
+    color: #6226BA;
+}
+
+.add-todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-save-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-save-container input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#save-button {
+    border: none;
+    border-radius: 15px;
+    background-color: #6226BA;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#save-button:disabled {
+    background-color: lightgrey;
+    color: black;
+    cursor: not-allowed;
+}
+
+.view-todos-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.show-finished-container{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.section-line{
+    height: 2px;
+    background-color: #E0DDF0;
+    width: 85%;
+    margin-top: 10px;
+    margin: 0px auto;
+}
+
+.your-todos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todos-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.todo p{
+    width: 100%;
+}
+
+.todo-completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+#edit-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #6226BA;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#edit-button img{
+    width: 15px;
+}
+
+#delete-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #6226BA;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#delete-button img{
+    width: 12px;
+}
+
+#edit-button:hover, #delete-button:hover {
+    background-color: #4e1a8a;
+}
+
+@media (max-width:820px) {
+    .task-page-container{
+        width: 90vw;
+    }
+
+    .task-page-container h1{
+        font-size: 25px;
+    }
+
+    .add-todo-container h2 {
+        font-size: 20px;
+    }
+
+    .your-todos-container h2 {
+        font-size: 20px;
+    }
+}
